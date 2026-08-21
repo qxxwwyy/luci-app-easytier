@@ -7,7 +7,7 @@
 include $(TOPDIR)/rules.mk
 -include $(dir $(lastword $(MAKEFILE_LIST)))../version.mk
 
-PKG_VERSION:=2.6.4-udp-fec
+PKG_VERSION:=2.6.4.1
 PKG_RELEASE:=1
 
 LUCI_TITLE:=LuCI support for EasyTier
