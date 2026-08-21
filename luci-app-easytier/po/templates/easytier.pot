@@ -1412,3 +1412,14 @@ msgstr ""
 
 msgid "Duplicate extra parameter"
 msgstr ""
+
+msgid ""
+"Native UDP forward error correction: adaptively sends UDP packets 1-3 "
+"times based on the measured loss rate of the link, with duplicate removal "
+"on the receiving end. Ideal for lossy links and real-time games; adds "
+"bandwidth overhead on lost packets. Both ends must enable it (--enable-"
+"udp-fec parameter)"
+msgstr ""
+
+msgid "Enable UDP FEC (Multi-Packet Sending)"
+msgstr ""

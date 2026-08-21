@@ -2107,3 +2107,16 @@ msgstr "数据库重置成功"
 
 msgid "Restart service to apply changes?"
 msgstr "重启服务以生效？"
+
+msgid ""
+"Native UDP forward error correction: adaptively sends UDP packets 1-3 "
+"times based on the measured loss rate of the link, with duplicate removal "
+"on the receiving end. Ideal for lossy links and real-time games; adds "
+"bandwidth overhead on lost packets. Both ends must enable it (--enable-"
+"udp-fec parameter)"
+msgstr ""
+"原生 UDP 前向纠错：根据链路实测丢包率自适应 1~3 倍发送 UDP 数据包，并在接收端对重复包去重。"
+"适合弱网链路与实时游戏；会在丢包时段增加带宽开销。需双端同时开启（--enable-udp-fec 参数）"
+
+msgid "Enable UDP FEC (Multi-Packet Sending)"
+msgstr "启用 UDP 前向纠错（多倍发包）"

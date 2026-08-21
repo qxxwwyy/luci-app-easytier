@@ -263,6 +263,13 @@ latency_first = s:taboption("privacy", Flag, "latency_first", translate("Enable 
                 .. "By default, the shortest path is used (--latency-first parameter)"))
 latency_first:depends("etcmd", "etcmd")
 
+enable_udp_fec = s:taboption("privacy", Flag, "enable_udp_fec", translate("Enable UDP FEC (Multi-Packet Sending)"),
+        translate("Native UDP forward error correction: adaptively sends UDP packets 1-3 times "
+                .. "based on the measured loss rate of the link, with duplicate removal on the receiving end. "
+                .. "Ideal for lossy links and real-time games; adds bandwidth overhead on lost packets. "
+                .. "Both ends must enable it (--enable-udp-fec parameter)"))
+enable_udp_fec:depends("etcmd", "etcmd")
+
 comp = s:taboption("privacy", ListValue, "comp", translate("Compression Algorithm"),
         translate("Compression algorithm to use (--compression parameter)"))
 comp.default = "none"
